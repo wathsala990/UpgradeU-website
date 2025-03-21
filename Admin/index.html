@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <title>UpdateU</title>
+    
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Arial', sans-serif;
+                background-color: #f4f4f4;
+            }
+    
+            header {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 1rem;
+            }
+    
+            .wrapper {
+               
+                margin: 50px auto;
+                max-width: 400px;
+                background: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+    
+            form {
+                margin-top: 100px;
+                text-align: center;
+            }
+    
+            h1 {
+                color: #333;
+            }
+    
+            .input-box {
+                position: relative;
+                margin-bottom: 20px;
+            }
+    
+            input {
+                width: 100%;
+                padding: 10px;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                margin-top: 5px;
+            }
+    
+            i.bx {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 10px;
+                color: #888;
+            }
+    
+            .bt {
+                margin-top: 20px;
+            }
+    
+            .btn {
+                background-color: #333;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+    
+            .btn:hover {
+                background-color: #555;
+            }
+        </style>
+        
+        
+    </head>
+    <body>
+        <header class="header">
+            <i class='bx bx-menu' id="menu-icon"></i>
+        </header>   
+        <div class="wrapper">
+            <form action="login.php" method="post">
+                <h1>login</h1>
+                <div class="input-box">
+                <input name="username" type="text" placeholder="Username" required>
+                <i class="bx bxs-user"></i>
+                </div>
+                <div class="input-box">
+                    <input name="password" type="password" placeholder="password" required>
+                </div>
+                
+                <div class="bt">
+                <button type="submit" class="btn" id="lg" name="lg"> login</button>
+                </div>
+             <div>
+                <button type="Delete" class="btn" name="Delete_btn"> DELETE DATA</button>
+             </div>           </form>
+        </div>
+    </body>
+</html>
